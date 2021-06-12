@@ -5,43 +5,60 @@
         </title>
         <script type="text/javascript" src="js/jq.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     </head>
 
     <header>
-        <a href="SQA.html">SQA tab</a>
-        <a  href="API.html">API tab</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="SQA.html">SQA tab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="API.html">API tab</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <body>
-        <h1>In API page</h1>
-        <br>
         <form onSubmit="return RunAPI();" class="col-md-6" target="_blank">
             <h3 id="clickToShow" onclick="clickToHideOrShow()">Run API request in client's SQA:</h3>
-            <ul class="list-group" id="RunAPIInfo">
-                <li class="list-group-item">Select the correct environment</li>
-                <li class="list-group-item">Add the <code>Institute ID</code></li>
-                <li class="list-group-item">Select from the <code>API</code> Catagories and Resources</li>
-                <li class="list-group-item">Modify the selected <code>API</code></li>
-                <li class="list-group-item">Click <kbd>Go</kbd> to run</li>
-            </ul>
+            <ol id="RunAPIInfo">
+                <li >Select environment</li>
+                <li >Insert the <code>Institute ID</code></li>
+                <li >Select from the <code>API</code> Catagories and Resources</li>
+                <li >Modify the <code>API</code> parameters</li>
+                <li> Click <kbd>Go</kbd> to run</li>
+            </ol>
             <div class="form-group">
-            <br>
-            <label for="ENV" class="ENV">Environment:</label>
-            <select class="form-control" id="ENVAPI" name="ENVAPI">
-                <option selected="true" disabled="disabled">Please choose environment</option>
-                <option>EU00</option>
-                <option>EU01</option>
-                <option>EU02</option>
-                <option>EU03</option>
-                <option>EU04</option>
-                <option disabled="disabled">------------------------------------------------------------------</option>
-                <option>AP01</option>
-                <option>CN01</option>
-                <option>NA01</option>
-                <option>NA02</option>
-                <option>NA03</option>
-                <option>NA04</option>
-                <option>NA05</option>
-            </select>
+                <div class="dropdown">
+                    <label for="ENV" class="ENV">Environment:</label>
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example id="ENVAPI" name="ENVAPI">
+                        <option selected="true" disabled="disabled">Please choose environment</option>
+                        <option>EU00</option>
+                        <option>EU01</option>
+                        <option>EU02</option>
+                        <option>EU03</option>
+                        <option>EU04</option>
+                        <option disabled="disabled">------------------------------------------------------------------</option>
+                        <option>AP01</option>
+                        <option>CN01</option>
+                        <option>NA01</option>
+                        <option>NA02</option>
+                        <option>NA03</option>
+                        <option>NA04</option>
+                        <option>NA05</option>
+                    </select>
+                </div>
             </div>
             <div class="form-group">
                 <label for="instIDAPI">Institution ID:</label>
