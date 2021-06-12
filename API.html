@@ -3,6 +3,8 @@
         <title>
             Esploro Support Tool v2.0
         </title>
+        <script type="text/javascript" src="js/jq.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <header>
@@ -11,6 +13,65 @@
     </header>
     <body>
         <h1>In API page</h1>
+        <br>
+        <form onSubmit="return RunAPI();" class="col-md-6" target="_blank">
+            <h3 id="clickToShow" onclick="clickToHideOrShow()">Run API request in client's SQA:</h3>
+            <ul class="list-group" id="RunAPIInfo">
+                <li class="list-group-item">Select the correct environment</li>
+                <li class="list-group-item">Add the <code>Institute ID</code></li>
+                <li class="list-group-item">Select from the <code>API</code> Catagories and Resources</li>
+                <li class="list-group-item">Modify the selected <code>API</code></li>
+                <li class="list-group-item">Click <kbd>Go</kbd> to run</li>
+            </ul>
+            <div class="form-group">
+            <br>
+            <label for="ENV" class="ENV">Environment:</label>
+            <select class="form-control" id="ENVAPI" name="ENVAPI">
+                <option selected="true" disabled="disabled">Please choose environment</option>
+                <option>EU00</option>
+                <option>EU01</option>
+                <option>EU02</option>
+                <option>EU03</option>
+                <option>EU04</option>
+                <option disabled="disabled">------------------------------------------------------------------</option>
+                <option>AP01</option>
+                <option>CN01</option>
+                <option>NA01</option>
+                <option>NA02</option>
+                <option>NA03</option>
+                <option>NA04</option>
+                <option>NA05</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="instIDAPI">Institution ID:</label>
+                <input type="text" class="form-control" id="instIDAPI" name="instIDAPI">
+            </div>
+            <div class="form-group">
+            <label for="APICat">API Catagory:</label>
+            <select id="API" onchange="fillOutDropMenu(this.id, 'Resource')" class="form-control">
+                <option selected="true" disabled="disabled">Please choose API Catagory</option>
+                <option value="Researchers">Researchers</option>
+                <option value="Assets">Assets</option>
+                <option value="Configurations">Configurations</option>
+                <option value="Analytics">Analytics</option>
+                <option value="Organizations">Organizations</option>
+            </select>
+            </div>
+            <div class="form-group" class="form-group">
+                <label for="APIResource">API Resource:</label>
+                <select id="Resource" class="form-control" onchange="chooseAPIResource(this)">
+                    <option selected="true" disabled="disabled">Please choose from API Catagory first</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="APIVal">Add the required API value(s):</label>
+                <input type="text" class="form-control" id="APIVal" name="APIVal">
+            </div>									  
+            <div class="form-group">
+                <button type="submit" class="button" style="vertical-align:middle"><span>Go</span>
+            </div>
+        </form>
     </body>
     <footer>
 

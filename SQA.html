@@ -3,6 +3,8 @@
         <title>
             Esploro Support Tool v2.0
         </title>
+        <script type="text/javascript" src="js/jq.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <header>
@@ -11,6 +13,41 @@
     </header>
     <body>
         <h1>In SQA page</h1>
+        <br>
+        <form onSubmit="return GoToSQA();" class="col-md-6" target="_blank" style="margin: 0px;">
+            <h3>Generate SQA URL for an Institution:</h3>
+            <!-- <p class="bg-info">Please select the correct environment from <code>ENV</code> and add the <code>Institute ID</code> then click <kbd>Go</kbd></p> -->
+            <div class="form-group">
+                <label for="ENV">Select the environment:</label>
+                <select class="form-control" id="ENV" name="ENV">
+                    <option selected="true" disabled="disabled">Please choose environment</option>
+                    <option>EU00</option>
+                    <option>EU01</option>
+                    <option>EU02</option>
+                    <option>EU03</option>
+                    <option>EU04</option>
+                    <option disabled="disabled">------------------------------------------------------------------</option>
+                    <option>AP01</option>
+                    <option>CN01</option>
+                    <option>NA01</option>
+                    <option>NA02</option>
+                    <option>NA03</option>
+                    <option>NA04</option>
+                    <option>NA05</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="instID">Insert Institution ID:</label>
+                <input type="text" class="form-control" id="instID" name="instID">
+            </div>
+            <div class="form-group">
+                <label for="Debug">Check for Debug Mode:</label><span style="padding-left: 10px;"></span>
+                <input type="checkbox" id="DebugMode" name="DebugMode" class="DebugMode">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button" style="vertical-align:middle"><span>Go</span>
+            </div>
+        </form>
     </body>
     <footer>
 
