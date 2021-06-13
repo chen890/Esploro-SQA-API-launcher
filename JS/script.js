@@ -1,6 +1,10 @@
 function GoToSQA()
 {
-	var env_value = document.getElementById("ENV").value, ins_ID = document.getElementById("instID").value, debug_mode = document.getElementById("DebugMode"), url="";
+	console.log('in GoToSQA function');
+	var env_value = document.getElementById("ENV").value, ins_ID = document.getElementById("floatingInput").value, debug_mode = document.getElementById("DebugMode"), url="";
+	console.log("env_value= "+env_value);
+	console.log("ins_ID= "+ins_ID);
+	console.log("debug_mode= "+debug_mode);
 	if (debug_mode.checked) {
 		switch(env_value.valueOf()) 
 			{
@@ -89,9 +93,15 @@ function GoToSQA()
 	window.open(url,'_blank');
 return false;
 }
+
 function RunAPI()
 {
+	console.log('in RunAPI() function')
 	var env_value = document.getElementById("ENVAPI").value, ins_ID_API = document.getElementById("instIDAPI").value, API_val = document.getElementById("APIVal").value;
+	console.log("env_value= "+env_value);
+	console.log("ins_ID_API= "+ins_ID_API);
+	console.log("API_val= "+API_val);
+
 	url="http://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".esploro.exlibrisgroup.com" + API_val;
 	var WindowAlert = {
 		A: function () {alert(url)}

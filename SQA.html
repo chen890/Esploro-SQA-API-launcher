@@ -40,7 +40,7 @@
             <!-- <p class="bg-info">Please select the correct environment from <code>ENV</code> and add the <code>Institute ID</code> then click <kbd>Go</kbd></p> -->
             <div class="form-group">
                 <label for="ENV">Select the environment:</label>
-                <select class="form-control" id="ENV" name="ENV">
+                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" id="ENV" name="ENV">
                     <option selected="true" disabled="disabled">Please choose environment</option>
                     <option>EU00</option>
                     <option>EU01</option>
@@ -59,8 +59,9 @@
             </div>
             <div class="form-group">
                 <label for="instID">Insert Institution ID:</label>
-                <input type="text" class="form-control" id="instID" name="instID">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Institution ID">
             </div>
+            <br>
             <div class="form-group">
                 <label for="Debug">Check for Debug Mode:</label><span style="padding-left: 10px;"></span>
                 <input type="checkbox" id="DebugMode" name="DebugMode" class="DebugMode">
@@ -89,18 +90,8 @@
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md">
-                    <h5>About</h5>
-                    <ul class="list-unstyled text-small">
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
       </footer>
-
 
 </html>
