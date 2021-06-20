@@ -102,7 +102,7 @@ function RunAPI()
 	console.log("ins_ID_API= "+ins_ID_API);
 	console.log("API_val= "+API_val);
 
-	url="http://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".esploro.exlibrisgroup.com" + API_val;
+	url="http://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".alma.exlibrisgroup.com" + API_val;
 	var WindowAlert = {
 		A: function () {alert(url)}
 	}
