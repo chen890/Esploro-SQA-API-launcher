@@ -8,42 +8,42 @@ function GoToSQA()
 	if (debug_mode.checked) {
 		switch(env_value.valueOf()) 
 			{
-				// URL example: // https://sqa-ap01.esploro.exlibrisgroup.com/mng/login?institute=61USC_INST&&productCode=esploro&debug=true&auth=local
+				// URL example: // https://sqa-ap01.alma.exlibrisgroup.com/mng/login?institute=61USC_INST&&productCode=esploro&debug=true&auth=local
 				case "AP01":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "NA01":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "NA02":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "NA03":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "NA04":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "NA05":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "CN01":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "EU00":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "EU01":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "EU02":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "EU03":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				break;
 				case "EU04":
-				url="https://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
+				url="https://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID +"&productCode=esploro&debug=true&auth=local";
 				default:
 				// code block
 			}
@@ -51,40 +51,40 @@ function GoToSQA()
 		switch(env_value.valueOf()) 
 			{
 				case "AP01":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "NA01":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "NA02":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "NA03":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "NA04":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "NA05":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "CN01":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "EU00":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "EU01":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "EU02":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "EU03":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 				case "EU04":
-				url="http://sqa-" + env_value + ".esploro.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
+				url="http://sqa-" + env_value + ".alma.exlibrisgroup.com/mng/login?institute="+ ins_ID+"&productCode=esploro&auth=local";
 				break;
 			}
 	}
