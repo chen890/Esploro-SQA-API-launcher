@@ -29,6 +29,9 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="API.html">API tab</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Links.html">Links tab</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -36,6 +39,7 @@
     </header>
     <body>
         <form onSubmit="return RunAPI();" class="col-md-6" target="_blank">
+            <br>
             <h3 id="clickToShow" onclick="clickToHideOrShow()">Run API request in client's SQA:</h3>
             <ol id="RunAPIInfo">
                 <li >Select environment</li>
@@ -44,6 +48,7 @@
                 <li >Modify the <code>API</code> parameters</li>
                 <li> Click <kbd>Go</kbd> to run</li>
             </ol>
+            <br>
             <div class="form-group">
                 <div class="dropdown">
                     <label for="ENV" class="ENV">Environment:</label>

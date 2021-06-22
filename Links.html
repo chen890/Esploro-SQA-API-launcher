@@ -24,13 +24,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="SQA.html">SQA tab</a>
+                    <a class="nav-link" aria-current="page" href="SQA.html">SQA tab</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " href="API.html">API tab</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="Links.html">Links tab</a>
+                    <a class="nav-link active" aria-current="page" href="Links.html">Links tab</a>
                   </li>
                 </ul>
               </div>
@@ -38,38 +38,22 @@
           </nav>
     </header>
     <body>
-        <br>
-        <form onSubmit="return GoToSQA();" class="col-md-6" target="_blank" style="margin: 0px;">
-            <h3>Generate SQA URL for an Institution:</h3>
+        <form onSubmit="return GoToLinks();" class="col-md-6" target="_blank" style="margin: 0px;">
             <br>
-            <!-- <p class="bg-info">Please select the correct environment from <code>ENV</code> and add the <code>Institute ID</code> then click <kbd>Go</kbd></p> -->
-            <div class="form-group">
-                <label for="ENV">Select the environment:</label>
-                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" id="ENV" name="ENV">
-                    <option selected="true" disabled="disabled">Please choose environment</option>
-                    <option>EU00</option>
-                    <option>EU01</option>
-                    <option>EU02</option>
-                    <option>EU03</option>
-                    <option>EU04</option>
-                    <option disabled="disabled">------------------------------------------------------------------</option>
-                    <option>AP01</option>
-                    <option>CN01</option>
-                    <option>NA01</option>
-                    <option>NA02</option>
-                    <option>NA03</option>
-                    <option>NA04</option>
-                    <option>NA05</option>
-                </select>
-            </div>
+            <h3>Generate URL links for  Portal / Profiles:</h3>
+            <br>
             <div class="form-group">
                 <label for="instID">Insert Institution ID:</label>
                 <input type="text" class="form-control" id="floatingInput" placeholder="Institution ID">
             </div>
             <br>
             <div class="form-group">
-                <label for="Debug">Check for Debug Mode:</label><span style="padding-left: 10px;"></span>
-                <input type="checkbox" id="DebugMode" name="DebugMode" class="DebugMode">
+                <label for="link_type">Select the link type:</label>
+                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" id="link_type" name="link_type">
+                    <option selected="true" disabled="disabled">Please choose environment</option>
+                    <option>Research Profiles</option>
+                    <option>Discovery Portal</option>
+                </select>
             </div>
             <div class="form-group">
                 <button type="submit" class="button" style="vertical-align:middle"><span>Go</span>
