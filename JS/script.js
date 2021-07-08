@@ -101,7 +101,10 @@ function RunAPI()
 	console.log("ins_ID_API= "+ins_ID_API);
 	console.log("API_val= "+API_val);
 
-	url="http://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".alma.exlibrisgroup.com" + API_val;
+	// base url example:
+	// https://AlmaSDK-exl_impl-institutionCode-972WIS_INST:a12345678A@sqa-eu02.alma.exlibrisgroup.com/esploro-api/v1/researchers/1234?user_id_type=all_unique&view=full&expand=none
+
+	url="https://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".alma.exlibrisgroup.com/esploro-api" +  + API_val;
 	var WindowAlert = {
 		A: function () {alert(url)}
 	}
@@ -119,15 +122,15 @@ function fillOutDropMenu(s1,s2) {
 	var s2 = document.getElementById('Resource');
 	s2.innerHTML = "";
 	if(s1.value == "Researchers"){
-		var optionArray = ["|","/esploro/v1/researchers|/esploro/v1/researchers", "/esploro/v1/researchers/{researcheID}|/esploro/v1/researchers/{researcheID}", "/esploro/v1/researchers/{orcid:.+}/token|/esploro/v1/researchers/{orcid:.+}/token", "/esploro/v1/researchers/test|/esploro/v1/researchers/test"];
+		var optionArray = ["|","/v1/researchers|/v1/researchers", "/v1/researchers/{researcheID}|/v1/researchers/{researcheID}", "/v1/researchers/{orcid:.+}/token|/v1/researchers/{orcid:.+}/token", "/v1/researchers/test|/v1/researchers/test"];
 		}else if(s1.value == "Assets"){
-		var optionArray = ["|","/esploro/v1/assets|/esploro/v1/assets", "/esploro/v1/assets/{assetIds}|/esploro/v1/assets/{assetIds}", "/esploro/v1/assets/test|/esploro/v1/assets/test"];
+		var optionArray = ["|","/v1/assets|/v1/assets", "/v1/assets/{assetIds}|/v1/assets/{assetIds}", "/v1/assets/test|/v1/assets/test"];
 	}else if(s1.value == "Configurations"){
-		var optionArray = ["|","/esploro/v1/researchconf/code-tables/{codeTableName}|/esploro/v1/researchconf/code-tables/{codeTableName}", "/esploro/v1/researchconf/md-import-profiles|/esploro/v1/researchconf/md-import-profiles","/esploro/v1/researchconf/md-import-profiles/{profile_id}|/esploro/v1/researchconf/md-import-profiles/{profile_id}", "/esploro/v1/researchconf/jobs|/esploro/v1/researchconf/jobs", "/esploro/v1/researchconf/jobs/{job_id}|/esploro/v1/researchconf/jobs/{job_id}", "/esploro/v1/researchconf/jobs/{job_id}/instances|/esploro/v1/researchconf/jobs/{job_id}/instances", "/esploro/v1/researchconf/jobs/{job_id}/instances/{instance_id}|/esploro/v1/researchconf/jobs/{job_id}/instances/{instance_id}", "/esploro/v1/researchconf/sets|/esploro/v1/researchconf/sets", "/esploro/v1/researchconf/sets/{set_id}|/esploro/v1/researchconf/sets/{set_id}", "/esploro/v1/researchconf/sets/{set_id}/members|/esploro/v1/researchconf/sets/{set_id}/members", "/esploro/v1/researchconf/test|/esploro/v1/researchconf/test"];
+		var optionArray = ["|","/v1/researchconf/code-tables/{codeTableName}|/v1/researchconf/code-tables/{codeTableName}", "/v1/researchconf/md-import-profiles|/v1/researchconf/md-import-profiles","/v1/researchconf/md-import-profiles/{profile_id}|/v1/researchconf/md-import-profiles/{profile_id}", "/v1/researchconf/jobs|/v1/researchconf/jobs", "/v1/researchconf/jobs/{job_id}|/v1/researchconf/jobs/{job_id}", "/v1/researchconf/jobs/{job_id}/instances|/v1/researchconf/jobs/{job_id}/instances", "/v1/researchconf/jobs/{job_id}/instances/{instance_id}|/v1/researchconf/jobs/{job_id}/instances/{instance_id}", "/v1/researchconf/sets|/v1/researchconf/sets", "/v1/researchconf/sets/{set_id}|/v1/researchconf/sets/{set_id}", "/v1/researchconf/sets/{set_id}/members|/v1/researchconf/sets/{set_id}/members", "/v1/researchconf/test|/v1/researchconf/test"];
 	}else if(s1.value == "Analytics"){
-	var optionArray = ["|","/esploro/v1/researchanalytics/paths|/esploro/v1/researchanalytics/paths", "/esploro/v1/researchanalytics/paths/{path:.+}|/esploro/v1/researchanalytics/paths/{path:.+}", "/esploro/v1/researchanalytics/reports|/esploro/v1/researchanalytics/reports", "/esploro/v1/researchanalytics/test|/esploro/v1/researchanalytics/test"];
+	var optionArray = ["|","/v1/researchanalytics/paths|/v1/researchanalytics/paths", "/v1/researchanalytics/paths/{path:.+}|/v1/researchanalytics/paths/{path:.+}", "/v1/researchanalytics/reports|/v1/researchanalytics/reports", "/v1/researchanalytics/test|/v1/researchanalytics/test"];
 	}else if(s1.value == "Organizations"){
-		var optionArray = ["|","/esploro/v1/organizations/internal|/esploro/v1/organizations/internal", "/esploro/v1/organizations/internal/{organizationCode}|/esploro/v1/organizations/internal/{organizationCode}", "/esploro/v1/organizations/test|/esploro/v1/organizations/test"];
+		var optionArray = ["|","/v1/organizations/internal|/v1/organizations/internal", "/v1/organizations/internal/{organizationCode}|/v1/organizations/internal/{organizationCode}", "/v1/organizations/test|/v1/organizations/test"];
 	}
 	for (var option in optionArray){
 		var pair = optionArray[option].split("|");
