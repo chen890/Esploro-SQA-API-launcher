@@ -104,7 +104,7 @@ function RunAPI()
 	// base url example:
 	// https://AlmaSDK-exl_impl-institutionCode-972WIS_INST:a12345678A@sqa-eu02.alma.exlibrisgroup.com/esploro-api/v1/researchers/1234?user_id_type=all_unique&view=full&expand=none
 
-	url="https://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".alma.exlibrisgroup.com/esploro-api" +  + API_val;
+	url="https://AlmaSDK-exl_impl-institutionCode-" + ins_ID_API + ":a12345678A" + "@sqa-" + env_value + ".alma.exlibrisgroup.com/esploro-api" + API_val;
 	var WindowAlert = {
 		A: function () {alert(url)}
 	}
