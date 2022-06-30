@@ -1,6 +1,7 @@
 # Chen_Esploro_tool
 
 Instructions:
+<br>
 Open the index.html
 The first option will be 'Go to SQA' and the second option will be 'Run API in SQA':
 ![image](https://user-images.githubusercontent.com/53993504/176745790-27fb5354-1403-4096-bff5-5a2e26e53e16.png)
